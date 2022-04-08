@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+
+
+    <style>
+    
+        /* 선 가로 길이 */
+        hr {
+            width: 1550px;
+        }
+
+        /*제목 입력칸*/
+        #title {
+            position: relative;
+            left: 9.3%;
+            width: 500px;
+            height: 50px;
+        }
+
+        /*버튼*/
+        button {
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            position: relative;
+            left: 9.3%;
+            margin-left: 8px;
+            margin-top: 10px;
+        }
+
+        /*등록*/
+        #bu1 {
+            position: fixed;
+            left: 85%;
+        }
+
+        /*내용 입력 칸*/
+        textarea {
+            position: relative;
+            left: 9.3%;
+            width: 1550px;
+            height: 650px;
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- 제목 입력칸 -->
+    <input type="text" id="title" placeholder="제목을 입력하세요..">
+
+    <!-- 선 -->
+    <hr>
+
+    <!-- 글씨와 관련된 버튼 -->
+    <button> <p>글씨 크기</p> </button>
+    <button> <p>글씨 색상</p> </button>
+    <button> <p>글씨 폰트</p> </button>
+    <button> <p>글씨 굵기</p> </button>
+    <button> <p>글씨 배경</p> </button>
+
+    <br> 
+    
+    <!-- 기타 -->
+    <button> <p>밑줄/취소선</p> </button>
+    <button> <p>게시판 배경</p> </button>
+    <button> <p>구분선/(구분선)색상</p> </button>
+    <button> <p>사진</p> </button>
+    <button> <p>동영상</p> </button>
+    <button> <p>정렬</p> </button>
+
+    <br>
+    <br>
+
+    <textarea placeholder="내용을 입력해 주세요..." ></textarea>
+
+    <br>
+    <button id="bu1"> <p>등록</p> </button>
+</body>
+</html>
