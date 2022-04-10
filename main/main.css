@@ -1,0 +1,61 @@
+ /* 게시물 버튼 */
+ #button_ {
+    width: 1550px;
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+
+/* 공백 부분(선과 버튼 사이) */
+#gap_1 {
+    height: 2px; 
+}
+#gap_2 {
+    height: 100px; 
+}
+
+/* 제목 부분 */
+#name {
+    position: relative;
+    left: 9.5%;
+}
+
+/* 부가 설명 부분 */
+#explanation {
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 9.5%;
+}
+
+/* 선 부분 */
+hr {
+    text-align: center;
+    width: 1550px;
+}
+
+/* 게시판 생성 버튼 부분 */
+#make {
+    float: left;
+    position: relative;
+    left: 75%;
+}
+
+/* 옆으로 정렬 그만 */
+#float {
+    clear: left;
+}
+
+/* 개발자 이름 */
+#developer {
+    float: left;
+    position: relative;
+    left: 9.5%;
+}
+
+/* 프로젝트명 */
+#project_name {
+    float: left;
+    position: relative;
+    left: 74%;
+}
