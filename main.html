@@ -6,75 +6,32 @@
     <title>main 화면</title>
 
     <style>
-         /* 게시물 버튼 */
-        #button_ {
-            width: 1550px;
-            height: 50px;
-            margin: auto;
-            display: block;
+
+        /* 배경 색상 */
+        body {
+            background-color: #353535;
         }
 
-        /* 공백 부분(선과 버튼 사이) */
-        #gap_1 {
-            height: 2px; 
+        p {
+            color: white;
         }
 
-        #gap_2 {
-            height: 100px; 
+        button {
+            background: #303030;
+            color: white;
         }
-
-        /* 제목 부분 */
-        #name {
-            position: relative;
-            left: 9.5%; 
-        }
-
-/* 부가 설명 부분 */
-#explanation {
-    text-align: center;
-    float: left;
-    position: relative;
-    left: 9.5%;
-}
-
-/* 선 부분 */
-hr {
-    text-align: center;
-    width: 1550px;
-}
-
-/* 게시판 생성 버튼 부분 */
-#make {
-    float: left;
-    position: relative;
-    left: 75%;
-}
-
-/* 옆으로 정렬 그만 */
-#float {
-    clear: left;
-}
-
-/* 개발자 이름 */
-#developer {
-    float: left;
-    position: relative;
-    left: 9.5%;
-}
-
-/* 프로젝트명 */
-#project_name {
-    float: left;
-    position: relative;
-    left: 74%;
-}
+        
     </style>
+
 
 </head>
 <body>
 
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+
+    <!-- 공백(제목 위 공백) -->
+    <p id="gap_"> </p>
 
     <!-- 제목 -->
     <p id="name">Web</p>
@@ -84,7 +41,7 @@ hr {
     <p id="explanation">전체 블로그에 관한 짧은 설명</p>
 
     <!-- 게시판 생성 버튼 -->
-    <button id="make">게시판 생성</button>
+    <button id="make" onclick="location.href='make.html'">게시판 생성</button>
     </div>
     
     <!-- 선 -->
@@ -107,8 +64,8 @@ hr {
     <!-- 선 -->
     <hr>
 
-    <p id="developer"> 개발자 : 박찬미, 김형준, 이동인 </p>
-    <p id="project_name"> 프로젝트명 </p>
+    <p id="developer"> 개발자 : 박찬미 </p>
+    <p id="project_name"> 프로젝트명 : 찬미는 닭강정을 좋아한다! </p>
 
 </body>
 </html>

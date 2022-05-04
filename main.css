@@ -7,6 +7,9 @@
 }
 
 /* 공백 부분(선과 버튼 사이) */
+#gap_ {
+    height: 15px;
+}
 #gap_1 {
     height: 2px; 
 }
@@ -18,6 +21,7 @@
 #name {
     position: relative;
     left: 9.5%;
+    font-size: 30px;
 }
 
 /* 부가 설명 부분 */
@@ -57,5 +61,5 @@ hr {
 #project_name {
     float: left;
     position: relative;
-    left: 74%;
+    left: 70%;
 }

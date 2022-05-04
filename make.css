@@ -1,3 +1,25 @@
+#gap {
+    height: 10px;
+}
+/*글씨 크기*/
+select {
+    position: relative;
+    left: 9.3%;
+    width: 150px;
+    height: 50px;
+    background-color: #303030;
+    color: white;
+}
+
+#button_ {
+    border: none;
+}
+
+/* 게시판 생성 버튼 */
+#make {
+    border : white;
+}
+
 /* 선 가로 길이 */
 hr {
     width: 1550px;
@@ -21,6 +43,7 @@ button {
     margin-left: 8px;
     margin-top: 10px;
 }
+
 
 /*등록*/
 #bu1 {

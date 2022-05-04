@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <title>게시판</title>
 
+    <style>
+        /* 배경 색상 */
+        body {
+            background-color: #353535;
+        }
+
+        p {
+            color: white;
+        }
+
+        button {
+            background: #303030;
+            color: white;
+        }
+        
+        textarea {
+            background-color: #353535;
+            color: white;
+        }
+
+        input {
+            background-color: #353535;
+            color: white;
+        }
+
     </style>
+
 </head>
 <body>
 
@@ -16,23 +42,77 @@
 
     <!-- 선 -->
     <hr>
-
-    <!-- 글씨와 관련된 버튼 -->
-    <button> <p>글씨 크기</p> </button>
-    <button> <p>글씨 색상</p> </button>
-    <button> <p>글씨 폰트</p> </button>
-    <button> <p>글씨 굵기</p> </button>
-    <button> <p>글씨 배경</p> </button>
-
-    <br> 
     
-    <!-- 기타 -->
-    <button> <p>밑줄/취소선</p> </button>
-    <button> <p>게시판 배경</p> </button>
-    <button> <p>구분선/(구분선)색상</p> </button>
-    <button> <p>사진</p> </button>
-    <button> <p>동영상</p> </button>
-    <button> <p>정렬</p> </button>
+
+    <br>
+
+    <button>글씨 굵게/얇게</button>
+    <button>취소선</button>
+    <button>밑줄</button>
+    <button>구분선</button>
+    <button>사진</button>
+    <button>동영상</button>
+    <button>정렬</button>
+
+    <br> <br>
+
+
+    <select id="textSize">
+        <option value="">글씨 크기</option>
+        <option value="">10px</option>
+        <option value="">15px</option>
+        <option value="">20px</option>
+        <option value="">25px</option>
+        <option value="">30px</option>
+    </select>
+
+    &nbsp;
+
+    <select id="textColor">
+        <option value="">글씨 색상</option>
+        <option value="">white</option>
+        <option value="">black</option>
+        <option value="">red</option>
+        <option value="">blue</option>
+        <option value="">yellow</option>
+        <option value="">green</option>
+    </select>
+
+    &nbsp;
+
+    <select id="textbackgroundColor">
+        <option value="">글씨 배경</option>
+        <option value="">white</option>
+        <option value="">black</option>
+        <option value="">red</option>
+        <option value="">blue</option>
+        <option value="">yellow</option>
+        <option value="">green</option>
+    </select>
+
+    &nbsp;
+
+    <select id="backgroundColor">
+        <option value="">게시판 배경</option>
+        <option value="">white</option>
+        <option value="">black</option>
+        <option value="">red</option>
+        <option value="">blue</option>
+        <option value="">yellow</option>
+        <option value="">green</option>
+    </select>
+
+    &nbsp;
+
+    <select id="hrColor">
+        <option value="">구분선 색상</option>
+        <option value="">white</option>
+        <option value="">black</option>
+        <option value="">red</option>
+        <option value="">blue</option>
+        <option value="">yellow</option>
+        <option value="">green</option>
+    </select>
 
     <br>
     <br>
@@ -40,6 +120,7 @@
     <textarea placeholder="내용을 입력해 주세요..." ></textarea>
 
     <br>
-    <button id="bu1"> <p>등록</p> </button>
+    <button id="bu1" onclick="location.href='main.html'"> <p>등록</p> </button>
+    
 </body>
 </html>
