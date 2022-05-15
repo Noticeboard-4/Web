@@ -1,71 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>main 화면</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main</title>
 
-    <style>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
 
-        /* 배경 색상 */
-        body {
-            background-color: #353535;
-        }
+        <dl class="center">
 
-        p {
-            color: white;
-        }
-
-        button {
-            background: #303030;
-            color: white;
-        }
+        <div class="whole">
         
-    </style>
+        <h3 class="title">Web</h3>
 
+        <div class="top">
+            <p>전체 블로그에 관한 짧은 설명</p>
+            <button class="make">게시판 생성</button>
+        </div>
 
-</head>
-<body>
+        <div class="main">
 
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+            <hr>
+                <div class="gap"></div>
+            <hr>
+        
+        </div>
 
-    <!-- 공백(제목 위 공백) -->
-    <p id="gap_"> </p>
+        <div class="bottom">
 
-    <!-- 제목 -->
-    <p id="name">Web</p>
+            <p>개발자 : 박찬미</p>
+            <p>프로젝트명 : 찬미는 닭강정을 좋아한다!</p>
 
-    <div>
-    <!-- 부가 설명 -->
-    <p id="explanation">전체 블로그에 관한 짧은 설명</p>
+        </div>
 
-    <!-- 게시판 생성 버튼 -->
-    <button id="make" onclick="location.href='make.html'">게시판 생성</button>
-    </div>
-    
-    <!-- 선 -->
-    <hr id="float">
+        </div>
 
-    <!-- 공백1(선과 버튼 사이_위) -->
-    <p id="gap_1"> </p>
-    
-    <!-- (작성한) 게시판 목록 -->
-    <button id="button_"> 제목1 </button> <br>
-    <button id="button_"> 제목2 </button> <br>
-    <button id="button_"> 제목3 </button> <br>
-    <button id="button_"> 제목4 </button> <br>
-    <button id="button_"> 제목5 </button> <br>
-    <button id="button_"> 제목6 </button>
+        </dl>
 
-     <!-- 공백2(버튼과 선 사이_위) -->
-     <p id="gap_2"> </p>
-
-    <!-- 선 -->
-    <hr>
-
-    <p id="developer"> 개발자 : 박찬미 </p>
-    <p id="project_name"> 프로젝트명 : 찬미는 닭강정을 좋아한다! </p>
-
-</body>
-</html>
+    </body>
+    </html>

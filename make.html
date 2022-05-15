@@ -1,126 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>게시판</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>게시판</title>
 
-    <style>
-        /* 배경 색상 */
-        body {
-            background-color: #353535;
-        }
+        <link rel="stylesheet" href="make.css">
+    </head>
+    <body>
 
-        p {
-            color: white;
-        }
+        <dl class="center">
 
-        button {
-            background: #303030;
-            color: white;
-        }
+        <div class="whole">
+
+        <input type="text" placeholder="제목을 입력하세요." class="title">
+
         
-        textarea {
-            background-color: #353535;
-            color: white;
-        }
-
-        input {
-            background-color: #353535;
-            color: white;
-        }
-
-    </style>
-
-</head>
-<body>
-
-    <link rel="stylesheet" href="make.css">
-    <script src="make.js"></script>
-
-    <!-- 제목 입력칸 -->
-    <input type="text" id="title" placeholder="제목을 입력하세요..">
-
-    <!-- 선 -->
-    <hr>
-    
-
-    <br>
-
-    <button>글씨 굵게/얇게</button>
-    <button>취소선</button>
-    <button>밑줄</button>
-    <button>구분선</button>
-    <button>사진</button>
-    <button>동영상</button>
-    <button>정렬</button>
-
-    <br> <br>
+        <div class="set">
+            
+            <button class="text_thickness"> 글씨 굵게/얇게  </button> 
+            <button class="strikethrough"> 취소선 </button>
+            <button class="underline"> 밑줄 </button>
+            <button class="hr"> 구분선 </button> 
+            <button class="range"> 정렬 </button> 
+            
+            <button class="textSize"> 글씨 크기 </button> 
+            <button class="textColor"> 글씨 색상 </button> 
+            <button class="textBackground"> 글씨 배경 </button>
+            <button class="WebBackground"> 게시판 배경 </button>
+            <button class="hrColor"> 구분선 색상 </button>
+            
+        </div>
 
 
-    <select id="textSize">
-        <option value="">글씨 크기</option>
-        <option value="">10px</option>
-        <option value="">15px</option>
-        <option value="">20px</option>
-        <option value="">25px</option>
-        <option value="">30px</option>
-    </select>
+        <textarea class="text" cols="30" rows="10" placeholder="내용을 입력하세요."></textarea>
+        
+    </div>
 
-    &nbsp;
+    </dl>
 
-    <select id="textColor">
-        <option value="">글씨 색상</option>
-        <option value="">white</option>
-        <option value="">black</option>
-        <option value="">red</option>
-        <option value="">blue</option>
-        <option value="">yellow</option>
-        <option value="">green</option>
-    </select>
-
-    &nbsp;
-
-    <select id="textbackgroundColor">
-        <option value="">글씨 배경</option>
-        <option value="">white</option>
-        <option value="">black</option>
-        <option value="">red</option>
-        <option value="">blue</option>
-        <option value="">yellow</option>
-        <option value="">green</option>
-    </select>
-
-    &nbsp;
-
-    <select id="backgroundColor">
-        <option value="">게시판 배경</option>
-        <option value="">white</option>
-        <option value="">black</option>
-        <option value="">red</option>
-        <option value="">blue</option>
-        <option value="">yellow</option>
-        <option value="">green</option>
-    </select>
-
-    &nbsp;
-
-    <select id="hrColor">
-        <option value="">구분선 색상</option>
-        <option value="">white</option>
-        <option value="">black</option>
-        <option value="">red</option>
-        <option value="">blue</option>
-        <option value="">yellow</option>
-        <option value="">green</option>
-    </select>
-
-    <br>
-    <br>
-
-    <textarea placeholder="내용을 입력해 주세요..." ></textarea>
-
-    <br>
-    <button id="bu1" onclick="location.href='main.html'"> <p>등록</p> </button>
-    
-</body>
-</html>
+        <button class="save"> 등록 </button>
+        
+    </body>
+    </html>

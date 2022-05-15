@@ -1,65 +1,95 @@
- /* 게시물 버튼 */
- #button_ {
-    width: 1550px;
-    height: 50px;
-    margin: auto;
-    display: block;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-/* 공백 부분(선과 버튼 사이) */
-#gap_ {
-    height: 15px;
-}
-#gap_1 {
-    height: 2px; 
-}
-#gap_2 {
-    height: 100px; 
-}
+   /* 웹 배경색상 */
+  body {
+    background-color: #3C3C3C;
+    color: white;
+  }
 
-/* 제목 부분 */
-#name {
-    position: relative;
-    left: 9.5%;
-    font-size: 30px;
-}
+  /* 전체 중앙 정렬 */
+  .center {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-/* 부가 설명 부분 */
-#explanation {
-    text-align: center;
-    float: left;
-    position: relative;
-    left: 9.5%;
-}
+  /* 전체 */
+  .whole {
+    display: grid;
+    grid-template-rows: 4fr;
+    grid-template-columns: 1fr;
+  }
 
-/* 선 부분 */
-hr {
-    text-align: center;
-    width: 1550px;
-}
+  /* 제목 */
+  .title {
+    width: 1500px;
+    margin: 16px 0px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 
-/* 게시판 생성 버튼 부분 */
-#make {
-    float: left;
-    position: relative;
-    left: 75%;
-}
+  /* 상단에 있는 설명과 게시판 생성 버튼 */
+  .top {
+    margin: 16px 0px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+     display: flex;
+    justify-content:space-between;
+  } 
 
-/* 옆으로 정렬 그만 */
-#float {
-    clear: left;
-}
+  /* 중간에 있는 게시판을 등록하면 생성되는 공간(+선까지 포함) */
+  .main {
+    grid-row:  3/4;
+    grid-column: 1/2;
+  }
 
-/* 개발자 이름 */
-#developer {
-    float: left;
-    position: relative;
-    left: 9.5%;
-}
+  /* 중간에 있는 게시판을 등록하면 생성되는 공간 */
+  .gap {
+    height: 700px;
+  }
 
-/* 프로젝트명 */
-#project_name {
-    float: left;
-    position: relative;
-    left: 70%;
-}
+  /* 하단에 있는 설명글 */
+  .bottom {
+    margin: 16px 0px;
+    grid-row: 4/5;
+    grid-column: 1/2;
+     display: flex;
+    justify-content:space-between;
+  }
+
+  /* 모든 버튼 디자인 */
+  button {
+    border: 0px;
+    color: white;
+    background-color: #252525;
+  }
+
+  /* 게시판 생성 버튼 */
+  .make {
+    width: 250px;
+    height: 40px;
+  }
+
+  /* 마우스 커서를 버튼 위에 올렸을 때 */
+  button:hover {
+    background-color: #191919;
+  }
+  
+  @media screen and (width:768px) {
+    
+    /* 제목 */
+    .title {
+      width: 700px;
+    }
+    
+    /* 게시판 생성 버튼 */
+    .make {
+      width: 150px;
+      height: 30px;
+    }
+
+  }
