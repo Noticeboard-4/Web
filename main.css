@@ -27,14 +27,14 @@
   /* 제목 */
   .title {
     width: 1500px;
-    margin: 16px 0px;
+    padding: 16px 0px;
     grid-row: 1/2;
     grid-column: 1/2;
   }
 
   /* 상단에 있는 설명과 게시판 생성 버튼 */
-  .top {
-    margin: 16px 0px;
+  nav {
+    padding: 16px 0px;
     grid-row: 2/3;
     grid-column: 1/2;
      display: flex;
@@ -42,7 +42,7 @@
   } 
 
   /* 중간에 있는 게시판을 등록하면 생성되는 공간(+선까지 포함) */
-  .main {
+ section {
     grid-row:  3/4;
     grid-column: 1/2;
   }
@@ -53,7 +53,7 @@
   }
 
   /* 하단에 있는 설명글 */
-  .bottom {
+  footer {
     margin: 16px 0px;
     grid-row: 4/5;
     grid-column: 1/2;
