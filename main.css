@@ -1,95 +1,37 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+}
 
-   /* 웹 배경색상 */
-  body {
-    background-color: #3C3C3C;
-    color: white;
-  }
+/* 웹 배경색상 */
+body {
+  background-color: #3C3C3C;
+  margin: 20px 170px;
+}
 
-  /* 전체 중앙 정렬 */
-  .center {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+/* 제목 아래 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
 
-  /* 전체 */
-  .whole {
-    display: grid;
-    grid-template-rows: 4fr;
-    grid-template-columns: 1fr;
-  }
+/* 하단부 */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
 
-  /* 제목 */
-  .title {
-    width: 1500px;
-    padding: 16px 0px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
+/* 모든 글씨 색깔 */
+h3, p {
+  color: white;
+}
 
-  /* 상단에 있는 설명과 게시판 생성 버튼 */
-  nav {
-    padding: 16px 0px;
-    grid-row: 2/3;
-    grid-column: 1/2;
-     display: flex;
-    justify-content:space-between;
-  } 
+.title {
+  padding: 10px 0px;
+}
 
-  /* 중간에 있는 게시판을 등록하면 생성되는 공간(+선까지 포함) */
- section {
-    grid-row:  3/4;
-    grid-column: 1/2;
-  }
-
-  /* 중간에 있는 게시판을 등록하면 생성되는 공간 */
-  .gap {
-    height: 700px;
-  }
-
-  /* 하단에 있는 설명글 */
-  footer {
-    margin: 16px 0px;
-    grid-row: 4/5;
-    grid-column: 1/2;
-     display: flex;
-    justify-content:space-between;
-  }
-
-  /* 모든 버튼 디자인 */
-  button {
-    border: 0px;
-    color: white;
-    background-color: #252525;
-  }
-
-  /* 게시판 생성 버튼 */
-  .make {
-    width: 250px;
-    height: 40px;
-  }
-
-  /* 마우스 커서를 버튼 위에 올렸을 때 */
-  button:hover {
-    background-color: #191919;
-  }
-  
-  @media screen and (width:768px) {
-    
-    /* 제목 */
-    .title {
-      width: 700px;
-    }
-    
-    /* 게시판 생성 버튼 */
-    .make {
-      width: 150px;
-      height: 30px;
-    }
-
-  }
+.center {
+  height: 800px;
+}
