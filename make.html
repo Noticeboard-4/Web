@@ -1,46 +1,39 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>게시판</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make</title>
 
-        <link rel="stylesheet" href="make.css">
-    </head>
-    <body>
+    <link rel="stylesheet" href="makeStyle.css">
+</head>
+<body>
 
-        <dl class="center">
+    <header>
+        <textarea name="" id="" class="title" cols="30" rows="10" placeholder="제목을 입력해 주세요..."></textarea>
+    </header>
 
-        <section>
+    <nav>
+        <button class="underline">밑줄</button>
+        <button class="division">구분선</button>
+        <button class="divisionColor">구분선 색상</button>
+        <button class="file">사진/동영상</button>
+        <button class="array">정렬</button>
 
-        <input type="text" placeholder="제목을 입력하세요." class="title">
+        <button class="textSize">글씨 크기</button>
+        <button class="textColor">글씨 색상</button>
+        <button class="textBackground">글씨 배경</button>
+        <button class="textThickness">글씨 굵기</button>
+        <button class="background">게시판 배경</button>
+    </nav>
 
-        
-        <article>
-            
-            <button class="text_thickness"> 글씨 굵게/얇게  </button> 
-            <button class="strikethrough"> 취소선 </button>
-            <button class="underline"> 밑줄 </button>
-            <button class="hr"> 구분선 </button> 
-            <button class="range"> 정렬 </button> 
-            
-            <button class="textSize"> 글씨 크기 </button> 
-            <button class="textColor"> 글씨 색상 </button> 
-            <button class="textBackground"> 글씨 배경 </button>
-            <button class="WebBackground"> 게시판 배경 </button>
-            <button class="hrColor"> 구분선 색상 </button>
-            
-        </article>
-
-
-        <textarea class="text" cols="30" rows="10" placeholder="내용을 입력하세요."></textarea>
-        
+    <section>
+        <textarea name="" id="" class="content" cols="30" rows="10" placeholder="내용을 입력해 주세요..."></textarea>
     </section>
 
-    </dl>
+    <button class="save">게시판 생성</button>
 
-        <button class="save"> 등록 </button>
-        
-    </body>
-    </html>
+    
+</body>
+</html>

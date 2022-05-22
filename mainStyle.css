@@ -6,7 +6,7 @@
 /* 웹 배경색상 */
 body {
   background-color: #3C3C3C;
-  margin: 20px 170px;
+  margin: 30px 170px;
 }
 
 /* 제목 아래 */
@@ -28,10 +28,26 @@ h3, p {
   color: white;
 }
 
+/* 게시판 생성 버튼 */
+button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #252525;
+}
+
+/* 마우스 커서를 버튼 위에 올렸을 때 */
+button:hover {
+  background-color: #191919;
+}
+
+/* 제목(Web) */
 .title {
   padding: 10px 0px;
 }
 
+/* 게시판을 생성되는 곳 */
 .center {
-  height: 800px;
+  height: 650px;
 }
